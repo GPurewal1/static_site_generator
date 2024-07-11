@@ -12,8 +12,6 @@ class TestLeafNode(unittest.TestCase):
 
     def test_initialization_without_value(self):
         with self.assertRaises(ValueError):
-            LeafNode(tag="p", value='')
-        with self.assertRaises(ValueError):
             LeafNode(tag="p", value=None)
 
     def test_html_rendering_with_tag(self):
