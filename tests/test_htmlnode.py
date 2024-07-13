@@ -1,6 +1,12 @@
+import sys
+import os
+
+src_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src'))
+sys.path.append(src_dir)
+
 import unittest
 
-from htmlnode import HTMLNode
+from src.htmlnode import HTMLNode
 
 
 class TestHTMLNode(unittest.TestCase):

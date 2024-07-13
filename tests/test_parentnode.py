@@ -1,7 +1,13 @@
+import sys
+import os
+
+src_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src'))
+sys.path.append(src_dir)
+
 import unittest
 
-from parentnode import ParentNode
-from leafnode import LeafNode
+from src.parentnode import ParentNode
+from src.leafnode import LeafNode
 
 class TestParentNode(unittest.TestCase):
     def test_initialization_with_valid_value(self):
